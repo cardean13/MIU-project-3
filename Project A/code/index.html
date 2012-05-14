@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- Yusef Hassan -->
+<!-- MIU 0512 -->
+<!-- Project 2 -->
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+			
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+		
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="styles.css" />
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="modernizr.custom.min.js"></script>
+
+</head>
+	<body>
+		<!-- First Page -->
+		<div data-role="page" id="base">
+	
+		<div data-role="header" data-position="fixed" data-theme="a">
+			<h1> Game&#47;DVD Lender </h1>
+		</div>
+				<div data-role="content" id="home">
+			<ul data-role="listview" data-filter="true">
+				<li data-role="list-divider">Help Remember Who Has Your Valuables.</li>
+		<a href="#addAccount" title="addInfo" rel="external" class="add">Add Info</a>
+			<li><a href="#">Browse Media</a>
+
+				<ul>
+					<li>		
+					<div data-role="header" data-position="fixed" data-theme="a">
+						<h1> Game&#47;DVD Lender </h1>
+					</div>
+					<a href="#">Movies</a>
+						<ul>
+							<li>						
+							<div data-role="header" data-position="fixed" data-theme="a">
+								<h1> Game&#47;DVD Lender </h1>
+							</div>
+								<img src="images/VHS.png" />
+								<h3>VHS</h3>
+								<p>Classic</p>
+							</li>
+							<li>
+								<img src="images/Blu-Ray.png" />
+								<h3>Blu-Ray</h3>
+								<p>HD</p>
+							</li>
+							<li>
+								<img src="images/DVD.png" />
+								<h3>DVD</h3>
+								<p>Dying Market</p>
+							</li>
+						</ul>
+					<li><a href="#">Games</a>
+						<ul>
+							<li>						
+							<div data-role="header" data-position="fixed" data-theme="a">
+								<h1> Game&#47;DVD Lender </h1>
+							</div>
+								<img src="images/Xbox 360.png" />
+								<h3>Xbox 360</h3>
+								<p>Microsoft</p>
+							</li>
+							<li>
+								<img src="images/PS3.png" />
+								<h3>PS3</h3>
+								<p>Sony</p>
+							</li>
+							<li>
+								<img src="images/Xbox 360.png" />
+								<h3>Wii</h3>
+								<p>Nintendo</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>			
+		</ul>
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	</div>
+</div>
+	
+	<!-- Second Page -->
+	<div data-role="page" id="addAccount" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Add Info</h1>
+	</div><!-- /header -->
+
+		<div>
+			<a class="all" href="#" id="remove">Remove All Accounts</a>
+			<a class="all" href="#allAccounts" id="allAccounts">View All Accounts</a>
+			<a class="all" href="#addAccount" id="addAccount" style="display:none;">Add New Account</a>
+		</div>
+		<form action="#" method="post" id="accountInfo">
+			<fieldset>
+			<legend>Account Information</legend>
+			<span>&#42;Required Data</span>
+			<ul id="errors"></ul>
+				<p><label for="fname">&#42; First Name:</label><input type="text" id="fname"/></p> 
+				<p><label for="lname">&#42; Last Name:</label><input type="text" id="lname"/></p>
+				<p><input type="radio" value="Male" id="male" name="sex" /> <label for="male">Male</label></p>
+				<p><input type="radio" value="Female" id="female" name="sex" /> <label for="female">Female</label></p>
+				<label for="age"> Age (10-80)<br /></label><input type="range" id="ageRange" min="10" max="80" value="10" step="1"/></li>
+				
+				</li>
+			</fieldset>
+			<fieldset>
+				<legend>Questions</legend>
+				<span>Check For Yes</span>
+				<ul id="boxes"></ul>
+					<li><label for="reliable" >Is the borrower reliable?</label><input type="checkbox" value="Yes" id="reliable"/></li>
+					<li><label for="job" >Do they have a job?</label><input type="checkbox" value="Yes" id="job"/></li>
+					<li><label for="replace" >If broken, could they replace it?</label><input type="checkbox" value="Yes" id="replace"/></li>
+					<li><label for="trust" >Do you fully trust them?</label><input type="checkbox" value="Yes" id="trust"/></li>
+			</fieldset>
+			<fieldset>
+				<legend>Disc Information</legend>
+				<label for="media">&#42; Type of Media</label>
+				<div id="select"></div>
+				<ul id="errors"></ul>
+					<li><label for="dname">Disc Name:</label><input type="text" id="dname"/></li>
+					<li><label for="value">Value:</label><input type="text" id="value"/></li>
+					<li><label for="ldate">Date Lent:</label><input type="date" id="ldate" /></label></li>
+					<li><label for="rdate">Expected Return Date:</label><input type="date" id="rdate" /></label></li>
+					<li><label for="comments">Any more information?<br></label><textarea id="comments"></textarea></li>
+			</fieldset>
+			<input type="submit" value="Confirm Lending" id="submit" />
+	</form>
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	<!-- Third Page -->
+
+	<div data-role="page" id="addAccount" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+		<h1>Add Info</h1>
+	</div><!-- /header -->
+
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="json.js" type="text/javascript"></script>
+	<script src="main.js" type="text/javascript"></script>
+	</body>
+</html>
