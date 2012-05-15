@@ -1,8 +1,41 @@
 //Yusef Hassan
 //MIU 0512
-//Project 2
+//Project 3
 
 
+
+$(document).ready(function(){
+
+	var aiform = $("#accountInfo");
+	
+	aiform.validate();
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 //wait till DOM is ready
 window.addEventListener("DOMContentLoaded", function(){
@@ -313,3 +346,5 @@ window.addEventListener("DOMContentLoaded", function(){
 	save.addEventListener("click", validate);
 
 });
+
+*/
