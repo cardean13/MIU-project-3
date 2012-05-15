@@ -31,7 +31,10 @@ Project 3
 
 }
 
-#errors{
-	color: red;
+label.error{
+	display: block;
+	margin: 10px 0;
+	color: #cc0000;
+
 }
-}
+

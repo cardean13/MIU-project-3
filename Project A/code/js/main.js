@@ -2,13 +2,21 @@
 //MIU 0512
 //Project 3
 
-
+var parseAccountInfo = function(data){
+		console.log(data);
+};
 
 $(document).ready(function(){
 
 	var aiform = $("#accountInfo");
 	
-	aiform.validate();
+	aiform.validate({
+		invalidHandler: function(form, validator){},
+		submitHandler: function(){
+			var data = aiform.serializeArray();
+			parseAccountInfo(data);
+		}
+	});
 
 
 
