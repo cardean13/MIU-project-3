@@ -24,26 +24,26 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //wait till DOM is ready
 window.addEventListener("DOMContentLoaded", function(){
@@ -344,7 +344,6 @@ window.addEventListener("DOMContentLoaded", function(){
 		errMsg = e("errors")
 	;
 	wheelHouse();
-	
 	//links and submit button
 	var removeLink = e ("remove");
 	removeLink.addEventListener("click", deleteData);
@@ -353,6 +352,5 @@ window.addEventListener("DOMContentLoaded", function(){
 	var save = e("submit");
 	save.addEventListener("click", validate);
 
-});
-
+});	
 */
