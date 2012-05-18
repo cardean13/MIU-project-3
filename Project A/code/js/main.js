@@ -8,7 +8,7 @@ var parseAccountInfo = function(data){
 
 $(document).ready(function(){
 
-	var aiform = $("#accountInfo");
+	var aiform = $("#accountinfo");
 	
 	aiform.validate({
 		invalidHandler: function(form, validator){},
@@ -22,9 +22,6 @@ $(document).ready(function(){
 
 });
 
-
-
-/*
 
 
 
@@ -295,7 +292,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		var getFname = e("fname");
 		var getLname = e("lname");
 		
-		errMsg.innerHTML = "";
+	/*	errMsg.innerHTML = "";
 			getGroup.style.border = "1px solid black";
 			getFname.style.border = "1px solid black";
 			getLname.style.border = "1px solid black";
@@ -332,7 +329,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			return false;
 		}else{
 			saveData(this.key);
-		}
+		}*/
 	}
 	// variable defaults
 	var typeOfMedia = ["--Movies--", "DVD", "VHS", "Blu-Ray", "--Games--", "Xbox 360", "PS3", "Wii" ],
@@ -343,7 +340,6 @@ window.addEventListener("DOMContentLoaded", function(){
 		trustValue = "No",
 		errMsg = e("errors")
 	;
-	wheelHouse();
 	//links and submit button
 	var removeLink = e ("remove");
 	removeLink.addEventListener("click", deleteData);
@@ -353,4 +349,3 @@ window.addEventListener("DOMContentLoaded", function(){
 	save.addEventListener("click", validate);
 
 });	
-*/
